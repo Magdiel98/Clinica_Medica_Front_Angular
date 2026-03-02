@@ -1,0 +1,14 @@
+<main>
+    <h1>CONSULTAS</h1>
+    <div id="conjunto">
+        @for(item of todoList; track $index){
+            <div class="card">
+                <p><strong>Data:</strong> {{item.data}}</p>
+                <p><strong>Hora:</strong> {{item.hora}}</p>
+                <p><strong>Status:</strong> {{item.status}}</p>
+                <p><strong>Paciente:</strong> {{item.nomePaciente}}</p>
+                <p><strong>Médico:</strong> {{item.nomeMedico}}</p>
+            </div>
+        }
+    </div>
+</main>

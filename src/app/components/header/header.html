@@ -1,0 +1,20 @@
+<header>
+    <img src="img/logo_fundo_removido_branco.png" alt="Logo Clínica">
+    <nav id="lista1">
+        <ul id="listacima">
+            <li><a routerLink="/">INÍCIO</a></li>
+            <li><a routerLink="/agendar">AGENDAR CONSULTA</a></li>
+            <li><a routerLink="/corpo">CORPO CLÍNICO</a></li>
+            <li><a routerLink="/faleconosco">FALE CONOSCO</a></li>
+        </ul>
+         <button type="button" class="btn" id="botaolista" (click)="showLista()">
+            <i class="bi bi-list"></i>
+        </button>
+        <ul id="listaburguer" class="card" *ngIf="show">
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="agendar/agendar.html">AGENDAR CONSULTA</a></li>
+            <li><a href="corpo/corpo.html">CORPO CLÍNICO</a></li>
+            <li><a href="fale/fale.html">FALE CONOSCO</a></li>
+        </ul>
+    </nav>
+</header>
